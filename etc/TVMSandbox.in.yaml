@@ -23,7 +23,7 @@ robots:
 # General constraints, always on
 constraints:
 - type: contact
-- type: dynamics
+- type: kinematics
   damper: [0.1, 0.01, 0.5]
 - type: compoundJoint
 # Collision constraint
@@ -51,6 +51,7 @@ jvrc1:
 states: {}
 # Transitions map
 transitions:
-- [TVMSandbox_Initial, OK, TVMSandbox_Initial, Strict]
+- [TVMSandbox_Initial, OK, TVMTutorial_ProblemWritingExample, Strict]
+- [TVMTutorial_ProblemWritingExample, OK, TVMTutorial_ProblemWritingExample, Strict]
 # Initial state
 init: TVMSandbox_Initial
